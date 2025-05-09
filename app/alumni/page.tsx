@@ -11,7 +11,7 @@ export default function SheetPage() {
   useEffect(() => {
     const isAuthenticated = sessionStorage.getItem('isAuthenticated');
     if (!isAuthenticated) {
-      router.push('/login');
+      router.push('/');
     }
   }, [router]);
 
