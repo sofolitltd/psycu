@@ -28,6 +28,37 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+      {/* Footer */}
+      <div className="fixed bottom-2 w-full px-4 flex justify-between text-xs text-gray-500">
+        {/* Bottom Left */}
+        <a
+          href="https://sofolit.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="italic"
+        >
+          Powered by <span className="font-semibold">Sofol IT</span>
+        </a>
+
+        {/* Bottom Right */}
+        <div className="flex flex-col items-end text-right">
+  <p className="italic">A humble contribution to the department.</p>
+  <p className="text-[11px] text-gray-600 font-semibold">
+    —{' '}
+    <a
+      href="https://www.facebook.com/asifuzzamanreyad" 
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-blue-600 hover:underline"
+    >
+      Md Asifuzzaman Reyad
+    </a>
+    , Batch 14
+  </p>
+</div>
+
+      </div>
       </body>
     </html>
   );
